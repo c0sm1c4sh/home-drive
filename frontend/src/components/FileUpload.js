@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+const API_BASE = process.env.REACT_APP_BACKEND_URL;
+
 const FileUpload = () => {
   const [file, setFile] = useState(null);
   const [status, setStatus] = useState('');
@@ -19,7 +21,7 @@ const FileUpload = () => {
 
     try {
       setStatus("Uploading...");
-      const res = await fetch("http://localhost:8000/upload", {
+      const res = await fetch(`${API_BASE}/upload`, {
         method: "POST",
         body: formData,
       });
@@ -36,11 +38,10 @@ const FileUpload = () => {
   };
 
   return (
-    <div>
-      <h2>Upload File</h2>
-      <input type="file" onChange={handleFileChange} />
-      <button onClick={handleUpload}>Upload</button>
-      <p>{status}</p>
+    <div className="upload-section">
+      <input type="file" onChange={handleFileChange} className="file-input" />
+      <button onClick={handleUpload} className="upload-btn">Upload</button>
+      <p className="status-msg">{status}</p>
     </div>
   );
 };
