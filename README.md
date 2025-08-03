@@ -77,6 +77,8 @@ Frontend: http://localhost:3000
 
 Backend: http://localhost:8000/docs (Swagger UI)
 
+---
+
 🌍 Deployment Notes
 Tested on AWS EC2 (Ubuntu)
 
@@ -85,6 +87,8 @@ Expose ports 3000 (frontend) and 8000 (backend) via security group
 Use Elastic IP to preserve public IP address
 
 Backend must be reachable from the frontend (REACT_APP_BACKEND_URL)
+
+---
 
 📌 TODOs
  User authentication
@@ -95,8 +99,10 @@ Backend must be reachable from the frontend (REACT_APP_BACKEND_URL)
 
  Drag-and-drop uploads
 
+---
+
 📄 License
 This project is open source and available under the MIT License.
+---
 
-🙌 Acknowledgements
 Built with ❤️ by c0sm1c4sh
