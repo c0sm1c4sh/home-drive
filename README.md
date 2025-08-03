@@ -102,7 +102,9 @@ Backend must be reachable from the frontend (REACT_APP_BACKEND_URL)
 ---
 
 📄 License
+
 This project is open source and available under the MIT License.
+
 ---
 
 Built with ❤️ by c0sm1c4sh
