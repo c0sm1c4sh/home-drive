@@ -53,22 +53,24 @@ Edit
 ```bash
 git clone https://github.com/c0sm1c4sh/home-drive.git
 cd home-drive
+```
+
 2. Configure Environment
 Create a .env file in the root directory:
 
-ini
-Copy
-Edit
+```bash
 AWS_ACCESS_KEY_ID=your_key
 AWS_SECRET_ACCESS_KEY=your_secret
 AWS_REGION=ap-south-1
 S3_BUCKET_NAME=your_bucket_name
 REACT_APP_BACKEND_URL=http://<your-ec2-ip>:8000
+```
+
 3. Run with Docker Compose
-bash
-Copy
-Edit
+```bash
 docker-compose up --build
+```
+
 Your app should now be live at:
 
 Frontend: http://localhost:3000
